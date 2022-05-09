@@ -1,0 +1,153 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height:100vh;
+    background-image: url('https://cdn.dribbble.com/users/3639405/screenshots/8761499/media/9badcccb740ab6cfceda0e5d25bf87a4.jpg?compress=1');
+    background-size: cover;
+}
+.container{
+    display: flex;
+    background: linear-gradient(#c1e3ff,#abc7ff);
+    width:500px;
+    box-shadow:0px 0px 2px 1px #a16bfe ;
+    border-radius:10px;
+}
+.container header{
+    position: relative;
+    left:30%;
+    margin-bottom: 20px;
+    color: #48326e;
+    font-size:22px;
+
+}
+
+.inputpart :where(input,button){
+    border:none;
+    outline:none;
+    width:100%;
+    margin-bottom:10px;
+
+}
+button{
+    background-color:#f0fc85;
+}
+.gyape{
+    margin: 10px 0px;
+    width:100%;
+    background-color:linear-gradient(#c1e3ff,#abc7ff);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:yellow;
+    padding:5px 5px;
+    height:1%;
+    font-size: 20px;
+}
+.gyape::before{
+    content:"or";
+
+}
+.container.active header{
+    font-size: 30px;
+    margin-left:5px;
+}
+.container.active .inputpart{
+    display:none;
+}
+.inputpart input{
+    background-color:linear-gradient(#c1e3ff,#abc7ff);
+    border: 1px solid skyblue;
+    border-radius:10px;
+    height:10%;
+
+}
+.inputpart input:is(:focus,:valid){
+    border: 5px solid skyblue;
+    border-radius:10px;
+    background-color:linear-gradient(#c1e3ff,#abc7ff);
+}
+.info{
+    display: none;
+    margin:30px;
+    padding:12px 10px;
+    
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:10px;
+}
+.info.error{
+    display: block;
+background-color: rgb(165, 76, 76);
+color:white;
+border-radius:10px;
+}
+.info.pending{
+    display: block;
+    background-color:rgb(119, 207, 119);
+    color:white;
+    border-radius:10px;
+}
+.container.active .weather-area{
+ display:inline;
+}
+.thermo img{
+    width:100px;
+    position: relative;
+    right:30%;
+    bottom:50px;
+
+}
+.huim img{
+width:50px;
+}
+.img{
+    position: relative;
+    right:10%;
+    top:15%;
+}
+
+.column.feels{
+    position: relative;
+    bottom:80px;
+    left:100%;
+    margin-bottom: 10px;
+    font-size: 25px;
+    color:#8a76ad;
+}
+.column.humidity{
+    position: relative;
+    bottom:60px;
+    left:100%;
+    font-size: 25px;
+    color:rgb(42, 221, 221);
+}
+.temp1{
+    position: relative;
+    top:25%;
+    right: 50%;
+    color: rgb(219, 155, 155);
+}
+.weather{
+    position: relative;
+    top:28%;
+    right:70%;
+    font-size: 20px;
+    color: rgb(1, 88, 122);
+}
+.location{
+    position: relative;
+    top:30%;
+    right:70%;
+    font-size:25px;
+    color:rgb(97, 212, 97);
+}
+.num{
+    font-size:40px;
+    font-weight: 500;
+}
+
+.container .weather-area{
+display:none;
+}
